@@ -18,17 +18,29 @@ export default function Contact({
                         <div
                             className=' border-b-[0.5px] border-texthigh'
                         />
-                        <div className='lg:w-[50%]  flex justify-between items-center'>
+                        <div 
+                        key={index}
+                        className='lg:w-[50%]  flex justify-between items-center'>
                             <p
                                 className=' text-sm font-Poppins text-texthigh tracking-wide'
                             >
                                 {`${item?.title} :`}
                             </p>
-                            <p
-                                className=' text-sm font-Poppins text-text tracking-wide'
-                            >
-                                {item?.value}
-                            </p>
+                            {
+                                item?.title === "Website" ?
+                                    <button 
+                                    onClick={()=>{
+                                        window.open(item?.value)
+                                    }}
+                                    target="_blank">{item?.value}</button>
+                                    :
+                                    <p
+                                        className=' text-sm font-Poppins text-text tracking-wide'
+                                    >
+                                        {item?.value}
+                                    </p>
+                            }
+
                         </div>
                     </>
                 ))

@@ -53,6 +53,18 @@ export default function Contact({
                         {data?.expiry_date}
                     </p>
                 </div>
+                <div className='flex w-[50%] flex-col'>
+                    <p
+                        className=' text-base font-Poppins  text-texthigh tracking-wide'
+                    >
+                        Unique Identifier or GSTIN  :
+                    </p>
+                    <p
+                        className=' text-sm font-Poppins text-text tracking-wide'
+                    >
+                        {data?.expiry_date}
+                    </p>
+                </div>
             </div>
             <div
                 className=' border-b-[0.5px] border-texthigh'

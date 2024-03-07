@@ -5,7 +5,7 @@ export default function Info({
 }) {
     return (
         <div
-            className={`lg:w-[75%] w-[88%] mt-10 lg:mt-20  space-y-5 lg:space-y-0 flex flex-col lg:flex-row justify-between `}
+            className={`lg:w-[75%] w-[88%] mt-5 lg:mt-20  space-y-5 lg:space-y-0 flex flex-col lg:flex-row justify-between `}
         >
             <img
                 alt='info'
