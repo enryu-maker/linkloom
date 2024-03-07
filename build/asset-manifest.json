@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/linkloom/static/css/main.5decc127.css",
+    "main.js": "/linkloom/static/js/main.84149328.js",
+    "static/js/453.024a5709.chunk.js": "/linkloom/static/js/453.024a5709.chunk.js",
+    "static/media/logo.png": "/linkloom/static/media/logo.c58988bde97be0db65cb.png",
+    "index.html": "/linkloom/index.html",
+    "main.5decc127.css.map": "/linkloom/static/css/main.5decc127.css.map",
+    "main.84149328.js.map": "/linkloom/static/js/main.84149328.js.map",
+    "453.024a5709.chunk.js.map": "/linkloom/static/js/453.024a5709.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5decc127.css",
+    "static/js/main.84149328.js"
+  ]
+}

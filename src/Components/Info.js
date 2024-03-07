@@ -1,12 +1,15 @@
 import React from 'react'
 
-export default function Info() {
+export default function Info({
+    data
+}) {
     return (
         <div
             className={`lg:w-[75%] w-[88%] mt-10 lg:mt-20  space-y-5 lg:space-y-0 flex flex-col lg:flex-row justify-between `}
         >
             <img
                 alt='info'
+                src={"https://swaroop.nerdtech.in"+data?.product?.image}
                 className='h-[300px] lg:w-[50%] outline-none font-Poppins object-contain rounded-lg'
             />
             <div
@@ -19,14 +22,12 @@ export default function Info() {
                 <p
                     className=' text-2xl font-Poppins text-text tracking-wide'
                 >
-                    NEEMASTRA / नीमस्त्र
-                    Azadirachtin 300 ppm
+                    {data?.product?.name}
                 </p>
                 <p
                     className=' text-base font-Poppins text-justify text-texthigh tracking-wide'
                 >
-                    Copper Oxychloride is a greenish-blue powder used as a fungicide for control of various diseases of fruits, vegetables and other crops. It is also used to control fungal growth in swimming pools. Copper Oxychloride is available in different grades and formulations. It is a cost-effective
-                    solution for disease control in farming.
+                    {data?.product?.directions_for_use}
                 </p>
                 
             </div>

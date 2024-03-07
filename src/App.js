@@ -1,18 +1,19 @@
 import React from 'react'
-import Header from './Components/Header'
-import Info from './Components/Info'
-import Contact from './Components/Contact'
-import Content from './Components/Content'
-import Table from './Components/Table'
+import { Route, Router, Routes, useLocation } from 'react-router-dom'
+import Index from './Components/Index'
+import axios from 'axios'
 
 export default function App() {
+  const path = useLocation()
+  const [data,setData] = React.useState([])
+  React.useEffect(()=>{
+    axios.get(`https://swaroop.nerdtech.in/batch-info/ss2401/9/`).then
+    (res => setData(res.data) )
+    .catch(err => alert("something went wrong"))
+  },[])
   return (
-    <div className=' bg-bg pb-10 lg:pb-20 w-full flex flex-col items-center'>
-      <Header />
-      <Info />
-      <Table/>
-      <Content />
-      <Contact />
-    </div>
+    <Routes>
+      <Route path='/' element={<Index data={data}/>}/>
+    </Routes>
   )
 }
