@@ -17,11 +17,11 @@ export default function Contact({
                     >
                         Batch No :
                     </p>
-                    <p
+                    {/* <p
                         className=' text-sm font-Poppins text-text tracking-wide'
                     >
                         {data?.batch_no}
-                    </p>
+                    </p> */}
                 </div>
                 <div className='flex w-[50%] flex-col'>
                     <p
@@ -29,11 +29,11 @@ export default function Contact({
                     >
                         Mfg :
                     </p>
-                    <p
+                    {/* <p
                         className=' text-sm font-Poppins text-text tracking-wide'
                     >
                         {data?.mfg_date}
-                    </p>
+                    </p> */}
                 </div>
 
             </div>
@@ -47,11 +47,11 @@ export default function Contact({
                     >
                         Expiry data :
                     </p>
-                    <p
+                    {/* <p
                         className=' text-sm font-Poppins text-text tracking-wide'
                     >
                         {data?.expiry_date}
-                    </p>
+                    </p> */}
                 </div>
                 <div className='flex w-[50%] flex-col'>
                     <p
@@ -59,11 +59,11 @@ export default function Contact({
                     >
                         Unique Identifier or GSTIN  :
                     </p>
-                    <p
+                    {/* <p
                         className=' text-sm font-Poppins text-text tracking-wide'
                     >
                         {data?.expiry_date}
-                    </p>
+                    </p> */}
                 </div>
             </div>
             <div
